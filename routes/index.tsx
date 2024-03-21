@@ -1,15 +1,13 @@
-import React from 'react'
-import { View, Text } from 'react-native'
+import HomeRoute from "./HomeRoute";
+import ProfileRoute from "./ProfileRoute";
 
-type Props = {}
-
-export default function index({}: Props) {
-  return (
-    <View>
-        <Text>
-            Hello
-        </Text>
-        </View>
-  )
-}
-
+export default [
+    {
+        name: 'Home',
+        component: HomeRoute,
+    },
+    {
+        name: 'Profile',
+        component: ProfileRoute
+    },
+]
